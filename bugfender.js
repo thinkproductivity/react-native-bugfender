@@ -89,6 +89,26 @@ function setForceEnabled(enabled) {
   RNBugfender.setForceEnabled(enabled);
 }
 
+function setDeviceBoolean(key, value) {
+  RNBugfender.setDeviceBoolean(key, value);
+}
+
+function setDeviceFloat(key, value) {
+  RNBugfender.setDeviceFloat(key, value);
+}
+
+function setDeviceInteger(key, value) {
+  RNBugfender.setDeviceInteger(key, value);
+}
+
+function setDeviceString(key, value) {
+  RNBugfender.setDeviceString(key, value);
+}
+
+function removeDeviceKey(key) {
+  RNBugfender.removeDeviceKey(key);
+}
+
 export default {
   activateLogger,
   info,
@@ -98,5 +118,10 @@ export default {
   enableUIEventLogging,
   setMaximumLocalStorageSize,
   forceSendOnce,
-  setForceEnabled
+  setForceEnabled,
+  setDeviceBoolean,
+  setDeviceFloat,
+  setDeviceInteger,
+  setDeviceString,
+  removeDeviceKey
 }

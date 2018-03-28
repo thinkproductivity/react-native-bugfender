@@ -70,4 +70,29 @@ public class RNBugfenderModule extends ReactContextBaseJavaModule{
   public void setForceEnabled(boolean value){
     Bugfender.setForceEnabled(value);
   }
+
+  @ReactMethod
+  public void setDeviceBoolean(String key, boolean value){
+    Bugfender.setDeviceBoolean(key, value);
+  }
+
+  @ReactMethod
+  public void setDeviceFloat(String key, Float value){
+    Bugfender.setDeviceFloat(key, value);
+  }
+
+  @ReactMethod
+  public void setDeviceInteger(String key, Integer value){
+    Bugfender.setDeviceInteger(key, value);
+  }
+
+  @ReactMethod
+  public void setDeviceString(String key, String value){
+    Bugfender.setDeviceString(key, value);
+  }
+
+  @ReactMethod
+  public void removeDeviceKey(String key){
+    Bugfender.removeDeviceKey(key);
+  }
 }
